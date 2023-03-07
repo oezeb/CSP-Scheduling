@@ -79,10 +79,10 @@ int main(int argc, char* argv[]) {
     auto duration = chrono::duration_cast<chrono::milliseconds>(end_time - start_time).count();
 
     if (success)
-        out << schedule.to_string();
+        out << schedule.to_string() << endl;
     else
         out << "No solution found." << endl;
 
-    cout << duration << "ms" << endl;
+    cout << "Duration: " << duration << " ms" << endl;
     return 0;
 }
